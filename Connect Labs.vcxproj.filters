@@ -15,43 +15,102 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameState.cpp">
+    <ClCompile Include="src\app\App.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
+    <ClCompile Include="src\core\TimeStep.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Node.cpp">
+    <ClCompile Include="src\input\InputState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Connection.cpp">
+    <ClCompile Include="src\math\Vec2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NodeTypes.cpp">
+    <ClCompile Include="src\math\MathUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cloth\ClothBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cloth\ClothForces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cloth\ClothSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cloth\ClothSim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\Brushes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\ClothRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\HudRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameState.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="src\app\App.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="src\core\Config.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utils.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="src\core\TimeStep.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="src\input\InputState.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Connection.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="src\math\Vec2.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NodeTypes.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="src\math\MathUtil.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\cloth\ClothPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cloth\ClothStick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cloth\ClothGridDesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cloth\ClothBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cloth\ClothForces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cloth\ClothSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cloth\ClothSim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\Brushes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\ClothRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\HudRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Connect Labs.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

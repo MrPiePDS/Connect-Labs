@@ -76,6 +76,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include\sgg;$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)
+</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +92,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include\sgg;$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)
+</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,14 +106,16 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\PDS_Uni\source\repos\Connect Labs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include\sgg;$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)
+</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\PDS_Uni\source\repos\Connect Labs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sggd.lib
-;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sggd.lib;%(AdditionalDependencies)
+</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -120,6 +126,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include\sgg;$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)
+</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,20 +135,41 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="Connection.cpp" />
-    <ClCompile Include="GameState.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Node.cpp" />
-    <ClCompile Include="NodeTypes.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\app\App.cpp" />
+    <ClCompile Include="src\core\TimeStep.cpp" />
+    <ClCompile Include="src\input\InputState.cpp" />
+    <ClCompile Include="src\math\Vec2.cpp" />
+    <ClCompile Include="src\math\MathUtil.cpp" />
+    <ClCompile Include="src\cloth\ClothBuilder.cpp" />
+    <ClCompile Include="src\cloth\ClothForces.cpp" />
+    <ClCompile Include="src\cloth\ClothSolver.cpp" />
+    <ClCompile Include="src\cloth\ClothSim.cpp" />
+    <ClCompile Include="src\render\Brushes.cpp" />
+    <ClCompile Include="src\render\ClothRenderer.cpp" />
+    <ClCompile Include="src\render\HudRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="Connection.h" />
-    <ClInclude Include="GameState.h" />
-    <ClInclude Include="Node.h" />
-    <ClInclude Include="NodeTypes.h" />
-    <ClInclude Include="Utils.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\app\App.h" />
+    <ClInclude Include="src\core\Config.h" />
+    <ClInclude Include="src\core\TimeStep.h" />
+    <ClInclude Include="src\input\InputState.h" />
+    <ClInclude Include="src\math\Vec2.h" />
+    <ClInclude Include="src\math\MathUtil.h" />
+    <ClInclude Include="src\cloth\ClothPoint.h" />
+    <ClInclude Include="src\cloth\ClothStick.h" />
+    <ClInclude Include="src\cloth\ClothGridDesc.h" />
+    <ClInclude Include="src\cloth\ClothBuilder.h" />
+    <ClInclude Include="src\cloth\ClothForces.h" />
+    <ClInclude Include="src\cloth\ClothSolver.h" />
+    <ClInclude Include="src\cloth\ClothSim.h" />
+    <ClInclude Include="src\render\Brushes.h" />
+    <ClInclude Include="src\render\ClothRenderer.h" />
+    <ClInclude Include="src\render\HudRenderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Connect Labs.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
